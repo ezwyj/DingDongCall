@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+    <link rel="stylesheet" href="~/assets/css/tlayer.css">
+    <link rel="stylesheet" href="~/assets/css/common.css">
+    @RenderSection("styles", false)
+    <link rel="stylesheet" href="~/assets/css/weui.min.css">
+    <!--[if lt IE 9]>
+        <script src="~/assets/js/lib/html5shiv.min.js"></script>
+        <script src="~/assets/js/lib/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        var OP_CONFIG = {
+            rootUrl: '@Url.Content("~/")',
+        };
+    </script>
+    @RenderSection("scripts", false)
+
+</head>
+<body>
+
+    @RenderBody()
+    <script src="~/assets/js/lib/require.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+</body>
+</html>
+
