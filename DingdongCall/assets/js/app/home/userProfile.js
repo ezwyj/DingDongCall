@@ -7,7 +7,7 @@
             $.tips('不是完整的11位手机号或者正确的手机号前七位', 2);
             return false;
         }
-        $.post(rootUrl + 'Home/UserProfile', {
+        $.post(rootUrl + 'Home/SavePhone', {
             userId: $('#userid').val(),
             phone:phone
         })

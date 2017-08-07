@@ -1,4 +1,5 @@
-﻿using DingdongCall.Models;
+﻿using DingdongCall.App_Start;
+using DingdongCall.Models;
 using PetaPoco;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace DingdongCall.Controllers
 {
     public class HomeController : Controller
     {
-        private static byte[] _key = Convert.FromBase64String(@"a0UcXqpLnhoWpzpHYcl1+A==");
+        private static byte[] _key = Convert.FromBase64String(@"uw4FGrtauRGbh2ukh2ZFAA ==");
         private static string Decrypt(string toDecrypt, byte[] key)
         {
             byte[] keyArray = key;
@@ -56,8 +57,30 @@ namespace DingdongCall.Controllers
         {
             var json = Decrypt(state, _key);
             var entity = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongOpenRequest>(json);
-
+            ViewBag.userId = entity.userid;
             return View();
+        }
+        public JsonResult SavePhone(string userId, string phone)
+        {
+            runLog.log("save userId:" + userId + ",mobile:" + phone);
+            Database db = new Database("Db");
+            db.BeginTransaction();
+            string sqlUserToDo = string.Empty;
+            sqlUserToDo = string.Format("Update DingDongCall_User set callphone='{0}',setphoneTime=getdate() where DingDongUserId='{1}'", phone, userId);
+            try
+            {
+
+                db.Execute(sqlUserToDo);
+                db.CompleteTransaction();
+                return new JsonResult { Data = new { State = true, Msg ="保存成功"}, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+
+            }
+            catch (Exception e)
+            {
+                db.AbortTransaction();
+                return new JsonResult { Data = new { State = false, Msg =e.Message}, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+
+            }
         }
         private static string appID = System.Configuration.ConfigurationManager.AppSettings["appId_ytx"];
         private static void CallMobile(string phoneNum)
@@ -68,11 +91,11 @@ namespace DingdongCall.Controllers
             string result = CommenHelper.SendRequest(url, jsonData);
 
         }
-
+        static FileLog runLog = new FileLog(AppDomain.CurrentDomain.BaseDirectory + @"/log/runLog.txt");
         public ContentResult OpenStatus(string state)
         {
-
-            
+            runLog.log(state);
+            state = state.Replace(" ", "+");
             var json = Decrypt(state, _key);
             var entity = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongOpenRequest>(json);
             Database db = new Database("Db");
@@ -103,6 +126,11 @@ namespace DingdongCall.Controllers
             }
 
         }
+        public ActionResult Index()
+        {
+            return View("");
+        }
+
         [HttpPost]
         public ActionResult Post()
         {
