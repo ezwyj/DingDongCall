@@ -13,7 +13,7 @@
         })
         .success(function (res) {
             if (res.State) {
-                $.tips('操作成功', 3);
+                $.tips('操作成功',5);
                 $.tlayer('close');
 
             } else {

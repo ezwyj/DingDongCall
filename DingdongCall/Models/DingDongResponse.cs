@@ -31,10 +31,10 @@ namespace DingdongCall.Models
     public class DingDongResponse
     {
         public Directive directive { get; set; }
-        public string is_end { get; set; }
+        public bool is_end { get; set; }
         public Push_to_app push_to_app { get; set; }
         public string sequence { get; set; }
-        public string timestamp { get; set; }
+        public long timestamp { get; set; }
         public string versionid { get; set; }
     }
 }

@@ -46,3 +46,4 @@ F:\gitcode\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Razor.resou
 F:\gitcode\DingDongCall\DingdongCall\obj\Debug\DingdongCall.dll
 F:\gitcode\DingDongCall\DingdongCall\obj\Debug\DingdongCall.pdb
 F:\gitcode\DingDongCall\DingdongCall\bin\DogNet.Repositories.dll
+F:\gitcode\DingDongCall\DingdongCall\obj\Debug\DingdongCall.csprojResolveAssemblyReference.cache

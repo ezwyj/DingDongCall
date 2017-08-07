@@ -132,12 +132,18 @@ namespace DingdongCall.Controllers
         }
 
         [HttpPost]
-        public ActionResult Post()
+        public ContentResult Post()
         {
             var json =GetJsonString();
             var reqObj  = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongRequest>(json);
             Database db = new Database("Db");
 
+            var toDingDongServer = new DingDongResponse();
+            toDingDongServer.versionid = "1.0";
+            toDingDongServer.is_end = true;
+            toDingDongServer.sequence = reqObj.sequence;
+            toDingDongServer.timestamp = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000;
+            toDingDongServer.directive = new Directive();
             //根据用户找手机
             string phone = db.ExecuteScalar<string>("select callPhone from DingDongCall_User where DingDongUserId=@0", reqObj.user.user_id);
             if (!string.IsNullOrEmpty(phone))
@@ -148,12 +154,25 @@ namespace DingdongCall.Controllers
                 log.Operation = json;
                 db.Save(log);
                 CallMobile(phone);
+
+
+                Directive_items item = new Directive_items();
+                item.content = "已播打电话请注意接听";
+                item.type = "1";
+                toDingDongServer.directive.directive_items.Add(item);
+
+            }
+            else
+            {
+                Directive_items item = new Directive_items();
+                item.content = "未找到播打电话,请先设置电话";
+                item.type = "1";
+                toDingDongServer.directive.directive_items.Add(item);
             }
 
 
-
             
-            return View();
+            return Content(Newtonsoft.Json.JsonConvert.SerializeObject(toDingDongServer));
         }
     }
 }
