@@ -3,8 +3,8 @@
 
     $('#ok').on('click', function () {
         var phone = $('#phone').val();
-        if (!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(phone))) {
-            $.tips('不是完整的11位手机号或者正确的手机号前七位', 2);
+        if (!(/^(13[0-9]|15[012356789]|17[0678]|18[0-9]|14[57])[0-9]{8}$/.test(phone))) {
+            $.tips('不是完整的11位手机号', 5);
             return false;
         }
         $.post(rootUrl + 'Home/SavePhone', {
