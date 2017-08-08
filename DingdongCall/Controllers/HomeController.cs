@@ -58,6 +58,10 @@ namespace DingdongCall.Controllers
             var json = Decrypt(state, _key);
             var entity = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongOpenRequest>(json);
             ViewBag.userId = entity.userid;
+            Database db = new Database("db");
+            string phone = db.ExecuteScalar<string>("select callPhone from DingDongCall_User where DingDongUserId=@0", entity.userid);
+            ViewBag.phone = phone;
+
             return View();
         }
         public JsonResult SavePhone(string userId, string phone)
