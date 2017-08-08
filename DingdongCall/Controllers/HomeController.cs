@@ -135,6 +135,8 @@ namespace DingdongCall.Controllers
         public ContentResult Post()
         {
             var json =GetJsonString();
+            runLog.log("from ding Server:" + json);
+
             var reqObj  = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongRequest>(json);
             Database db = new Database("Db");
 
