@@ -139,6 +139,8 @@ namespace DingdongCall.Controllers
         public ContentResult Post()
         {
             var json =GetJsonString();
+            runLog.log(json);
+
             var reqObj  = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongRequest>(json);
             Database db = new Database("Db");
 
@@ -163,6 +165,8 @@ namespace DingdongCall.Controllers
                 Directive_items item = new Directive_items();
                 item.content = "已播打电话请注意接听";
                 item.type = "1";
+                toDingDongServer.directive = new Directive();
+                toDingDongServer.directive.directive_items = new List<Directive_items>();
                 toDingDongServer.directive.directive_items.Add(item);
 
             }
@@ -171,6 +175,8 @@ namespace DingdongCall.Controllers
                 Directive_items item = new Directive_items();
                 item.content = "未找到播打电话,请先设置电话";
                 item.type = "1";
+                toDingDongServer.directive = new Directive();
+                toDingDongServer.directive.directive_items = new List<Directive_items>();
                 toDingDongServer.directive.directive_items.Add(item);
             }
 

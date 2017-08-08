@@ -47,7 +47,6 @@ F:\gitcode\DingDongCall\DingdongCall\obj\Debug\DingdongCall.dll
 F:\gitcode\DingDongCall\DingdongCall\obj\Debug\DingdongCall.pdb
 F:\gitcode\DingDongCall\DingdongCall\bin\DogNet.Repositories.dll
 F:\gitcode\DingDongCall\DingdongCall\obj\Debug\DingdongCall.csprojResolveAssemblyReference.cache
-D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.csprojResolveAssemblyReference.cache
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.dll
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.pdb
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\roslyn\csc.exe
@@ -96,3 +95,4 @@ D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.Razor.
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.csprojResolveAssemblyReference.cache

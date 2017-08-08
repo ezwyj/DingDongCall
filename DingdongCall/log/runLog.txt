@@ -12,3 +12,90 @@
 2017/8/7 9:41:14: DdWUvBeMrS7g6md5U667nWtJLbsPC6uddnHTrLyg32FAWH1TcUl6qm1AvhgZtlpe2/sa6ouvMzuSCK9bEaVWTtCHd9UY9qSG81EKkaNM HbvLT6vks0w/84PvGQ5VHI8NRcnaffv05dvYp 0IKua/zgRof2UzlZWSgFBJvo0Rys=
 -------------------------
 2017/8/7 9:42:29: DdWUvBeMrS7g6md5U667nWtJLbsPC6uddnHTrLyg32FAWH1TcUl6qm1AvhgZtlpe2/sa6ouvMzuSCK9bEaVWTtCHd9UY9qSG81EKkaNM HbvLT6vks0w/84PvGQ5VHI8NRcnaffv05dvYp 0IKua/zgRof2UzlZWSgFBJvo0Rys=
+-------------------------
+2017/8/9 0:09:29: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 0:10:13: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 0:11:49: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
