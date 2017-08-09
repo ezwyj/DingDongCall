@@ -58,7 +58,7 @@ namespace DingdongCall.Controllers
             var json = Decrypt(state, _key);
             var entity = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongOpenRequest>(json);
             ViewBag.userId = entity.userid;
-            Database db = new Database("db");
+            Database db = new Database("dingdongDB");
             string phone = db.ExecuteScalar<string>("select callPhone from DingDongCall_User where DingDongUserId=@0", entity.userid);
             ViewBag.phone = phone;
 
@@ -67,7 +67,7 @@ namespace DingdongCall.Controllers
         public JsonResult SavePhone(string userId, string phone)
         {
             runLog.log("save userId:" + userId + ",mobile:" + phone);
-            Database db = new Database("Db");
+            Database db = new Database("dingdongDB");
             db.BeginTransaction();
             string sqlUserToDo = string.Empty;
             sqlUserToDo = string.Format("Update DingDongCall_User set callphone='{0}',setphoneTime=getdate() where DingDongUserId='{1}'", phone, userId);
@@ -89,11 +89,11 @@ namespace DingdongCall.Controllers
         private static string appID = System.Configuration.ConfigurationManager.AppSettings["appId_ytx"];
         private static void CallMobile(string phoneNum)
         {
-            string jsonData = "{\"action\":\"callDailBack\",\"src\":\"" + phoneNum + "\",\"dst\":\"" + phoneNum + "\",\"appid\":\"" + appID + "\",\"credit\":\"" + "10" + "\"}";
+            string jsonData = "{\"action\":\"callDailBack\",\"src\":\"" + phoneNum + "\",\"dst\":\"01053189990\",\"appid\":\"" + appID + "\",\"credit\":\"" + "10" + "\"}";
             //2、云通信平台接口请求URL
             string url = "/call/DailbackCall.wx";
             string result = CommenHelper.SendRequest(url, jsonData);
-
+            runLog.log("call :" + result);
         }
         static FileLog runLog = new FileLog(AppDomain.CurrentDomain.BaseDirectory + @"/log/runLog.txt");
         public ContentResult OpenStatus(string state)
@@ -102,7 +102,7 @@ namespace DingdongCall.Controllers
             state = state.Replace(" ", "+");
             var json = Decrypt(state, _key);
             var entity = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongOpenRequest>(json);
-            Database db = new Database("Db");
+            Database db = new Database("dingdongDB");
             db.BeginTransaction();
             string sqlCheck = string.Format("Select count(0) from DingDongCall_User where DingDongUserId='{0}'",entity.userid);
             var first = db.ExecuteScalar<int>(sqlCheck);
@@ -142,7 +142,7 @@ namespace DingdongCall.Controllers
             runLog.log(json);
 
             var reqObj  = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongRequest>(json);
-            Database db = new Database("Db");
+            Database db = new Database("dingdongDB");
 
             var toDingDongServer = new DingDongResponse();
             toDingDongServer.versionid = "1.0";
@@ -159,7 +159,7 @@ namespace DingdongCall.Controllers
                 log.UserId = reqObj.user.user_id;
                 log.Operation = json;
                 db.Save(log);
-                CallMobile(phone);
+                CallMobile(phone.Trim());
 
 
                 Directive_items item = new Directive_items();
