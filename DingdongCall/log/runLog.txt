@@ -99,3 +99,219 @@
     },
     "extend": {}
 }
+-------------------------
+2017/8/9 22:06:46: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 22:08:41: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 23:07:21: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 23:09:57: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 23:39:35: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 23:39:36: err post:项“DB”已添加。 (D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\web.config line 11)
+-------------------------
+2017/8/9 23:40:48: {
+    "versionid": "1.0",
+    "status": "INTENT",
+    "sequence": "f10ee90bcff644cdab1ed2a18c4ddd63",
+    "timestamp": 1873609207048,
+    "application_info": {
+        "application_id": "ia3a449b",
+        "application_name": "小智"
+    },
+    "session": {
+        "is_new": true,
+        "session_id": "be44d9f4f13a4e789c2d1b5f3d897e84",
+        "attributes": {
+            "bizname": "小智",
+            "type": "order"
+        }
+    },
+    "user": {
+        "user_id": "9181c619bbe34e9e935248a70a199e37",
+        "attributes": {}
+    },
+    "input_text": "让小智关闭客厅灯。",
+    "slots": {
+        "bizname": "小智",
+        "type": "order"
+    },
+    "extend": {}
+}
+-------------------------
+2017/8/9 23:44:49: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:44:50: err post:将截断字符串或二进制数据。
+-------------------------
+2017/8/9 23:47:52: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:47:52: err post:不能将值 NULL 插入列 'Id'，表 'qds21649643_db.dbo.DingDongCall_Log'；列不允许有 Null 值。INSERT 失败。
+-------------------------
+2017/8/9 23:50:52: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:54:48: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:55:22: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:56:02: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:56:05: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:56:33: 
+-------------------------
+2017/8/9 23:56:33: err post:未将对象引用设置到对象的实例。
+-------------------------
+2017/8/9 23:58:16: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/9 23:58:54: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/10 0:01:05: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/10 0:02:05: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/10 0:04:47: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/10 0:04:58: call :{"statusCode":"-102","statusMsg":"电话号码不合法"}
+-------------------------
+2017/8/10 0:05:43: call :{"statusCode":"-102","statusMsg":"电话号码不合法"}
+-------------------------
+2017/8/10 0:06:40: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
+-------------------------
+2017/8/10 0:06:50: call :{"statusCode":"0","statusMsg":"提交成功","requestId":"2017080000001083"}

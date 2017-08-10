@@ -95,4 +95,3 @@ D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.Razor.
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-D:\CODE_NET\dingdongcall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.csprojResolveAssemblyReference.cache
