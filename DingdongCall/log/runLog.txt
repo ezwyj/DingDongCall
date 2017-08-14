@@ -315,3 +315,9 @@
 2017/8/10 0:06:40: {"versionid":"1.0","status":"INTENT","sequence":"3137be6693a04340b5f333ea23f8c2a1","timestamp":1502293368790,"application_info":{"application_id":"0341wnlh","application_name":"FindMobilePhone","application_version":"10000"},"session":{"is_new":true,"session_id":"72d092a6608042859066dea9353d0aac","attributes":{"operation":"mobile"}},"user":{"user_id":"308ae53d8fcd46108e9ec7c8bb99d909","attributes":{}},"input_text":"让小军找手机","slots":{"operation":"mobile"},"extend":{}}
 -------------------------
 2017/8/10 0:06:50: call :{"statusCode":"0","statusMsg":"提交成功","requestId":"2017080000001083"}
+-------------------------
+2017/8/14 22:43:49: save userId:a6d75502b0ed494b80d459754c8db7a2,mobile:13679058245
+-------------------------
+2017/8/14 22:43:50: save userId:a6d75502b0ed494b80d459754c8db7a2,mobile:13679058245
+-------------------------
+2017/8/14 22:43:55: save userId:a6d75502b0ed494b80d459754c8db7a2,mobile:13679058245

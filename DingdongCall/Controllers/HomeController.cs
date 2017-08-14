@@ -55,6 +55,7 @@ namespace DingdongCall.Controllers
         /// <returns></returns>
         public ActionResult UserProfile(string state)
         {
+            state = state.Replace(" ", "+");
             var json = Decrypt(state, _key);
             var entity = Newtonsoft.Json.JsonConvert.DeserializeObject<DingDongOpenRequest>(json);
             ViewBag.userId = entity.userid;
