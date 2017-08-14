@@ -163,7 +163,7 @@ namespace DingdongCall.Controllers
 
 
                 Directive_items item = new Directive_items();
-                item.content = "已播打电话请注意接听";
+                item.content = "已拨打电话请注意接听";
                 item.type = "1";
                 toDingDongServer.directive = new Directive();
                 toDingDongServer.directive.directive_items = new List<Directive_items>();
@@ -173,7 +173,7 @@ namespace DingdongCall.Controllers
             else
             {
                 Directive_items item = new Directive_items();
-                item.content = "未找到播打电话,请先设置电话";
+                item.content = "未找到拨打电话,请先设置电话";
                 item.type = "1";
                 toDingDongServer.directive = new Directive();
                 toDingDongServer.directive.directive_items = new List<Directive_items>();

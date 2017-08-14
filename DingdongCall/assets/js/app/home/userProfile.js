@@ -15,7 +15,7 @@
             if (res.State) {
                 $.tips('操作成功',5);
                 $.tlayer('close');
-
+                location.href = 'linglong://back';
             } else {
                 $.tips('操作失败：' + res.Msg, 0);
             }
