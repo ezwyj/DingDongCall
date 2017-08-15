@@ -1,10 +1,10 @@
 ﻿define(['common', 'util','tlayer'], function ($, util) {
     var rootUrl = OP_CONFIG.rootUrl;
 
-    
+    $("#phone").focus();
 
     $('#ok').on('click', function () {
-        var phone = $('#phone').val();
+        var phone = $('#phone').val().trim();
         var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
         if (!myreg.test(phone)) {
             $.tips('不是有效的的11位手机号', 8);
