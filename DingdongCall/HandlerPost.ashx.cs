@@ -59,11 +59,6 @@ namespace DingdongCall
                 string phone = db.ExecuteScalar<string>("select callPhone from DingDongCall_User where DingDongUserId=@0", reqObj.user.user_id);
                 if (!string.IsNullOrEmpty(phone))
                 {
-                    LogEntity log = new LogEntity();
-                    log.InputTime = DateTime.Now;
-                    log.UserId = reqObj.user.user_id;
-                    log.Operation = postStr;
-                    db.Save(log);
                     CallMobile(phone);
 
 

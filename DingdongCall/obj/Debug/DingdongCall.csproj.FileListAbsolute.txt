@@ -141,6 +141,5 @@ F:\gitcode\DingDongCall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.Razor.r
 F:\gitcode\DingDongCall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.resources.dll
 F:\gitcode\DingDongCall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 F:\gitcode\DingDongCall\DingDongCall\DingdongCall\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-F:\gitcode\DingDongCall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.csprojResolveAssemblyReference.cache
 F:\gitcode\DingDongCall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.dll
 F:\gitcode\DingDongCall\DingDongCall\DingdongCall\obj\Debug\DingdongCall.pdb

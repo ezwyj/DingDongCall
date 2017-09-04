@@ -155,14 +155,7 @@ namespace DingdongCall.Controllers
             string phone = db.ExecuteScalar<string>("select callPhone from DingDongCall_User where DingDongUserId=@0", reqObj.user.user_id);
             if (!string.IsNullOrEmpty(phone))
             {
-                LogEntity log = new LogEntity();
-                log.InputTime = DateTime.Now;
-                log.UserId = reqObj.user.user_id;
-                log.Operation = json;
-                db.Save(log);
                 CallMobile(phone.Trim());
-
-
                 Directive_items item = new Directive_items();
                 item.content = "已拨打电话请注意接听";
                 item.type = "1";
@@ -180,8 +173,6 @@ namespace DingdongCall.Controllers
                 toDingDongServer.directive.directive_items = new List<Directive_items>();
                 toDingDongServer.directive.directive_items.Add(item);
             }
-
-
             
             return Content(Newtonsoft.Json.JsonConvert.SerializeObject(toDingDongServer));
         }
