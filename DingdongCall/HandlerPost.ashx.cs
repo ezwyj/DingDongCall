@@ -63,7 +63,7 @@ namespace DingdongCall
 
 
                     Directive_items item = new Directive_items();
-                    item.content = "已播打电话请注意接听";
+                    item.content = "主人，已播打电话请注意接听";
                     item.type = "1";
                     toDingDongServer.directive = new Directive();
                     toDingDongServer.directive.directive_items = new List<Directive_items>();
@@ -73,7 +73,7 @@ namespace DingdongCall
                 else
                 {
                     Directive_items item = new Directive_items();
-                    item.content = "未找到播打电话,请先设置电话";
+                    item.content = "主人，您还没有设置手机号码，请在手机APP应用平台中的小军找手机技能里，进行设置，然后您就可以说“让小军找手机”啦";
                     item.type = "1";
                     toDingDongServer.directive = new Directive();
                     toDingDongServer.directive.directive_items = new List<Directive_items>();

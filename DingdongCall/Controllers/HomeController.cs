@@ -77,6 +77,7 @@ namespace DingdongCall.Controllers
 
                 db.Execute(sqlUserToDo);
                 db.CompleteTransaction();
+                runLog.log(string.Format("save user:{0} phone:{1}", userId, phone));
                 return new JsonResult { Data = new { State = true, Msg ="保存成功"}, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
             }
@@ -112,6 +113,7 @@ namespace DingdongCall.Controllers
             {
                 //新增
                 sqlUserToDo = string.Format("Insert into DingDongCall_User (DingDongUserId,Inputtime,status) values ('{0}',getdate(),'{1}')", entity.userid, entity.operation);
+
             }
             else
             {
